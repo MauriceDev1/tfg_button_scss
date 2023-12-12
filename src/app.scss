@@ -1,0 +1,36 @@
+.my-container {
+    display: flex;
+    flex-wrap: wrap;
+    @media (min-width: 640px){
+        flex-wrap: nowrap;
+        gap: 0.75rem;
+    }
+    .my-element {  
+      width: 100%;
+      margin-top: 15px;
+      @media (min-width: 840px){
+          width: 33.3333%;
+        }
+      text-align: center;
+      border-width: 1.5px;
+      border-style: solid;
+      border-radius: 0.375rem;
+      height: 2.3rem;
+      text-decoration: none;
+    }
+    .my-element, p {
+        margin-top: 10px;
+    }
+}
+
+
+@font-face {
+    font-family: 'YourFontName'; /* Choose a name for your font */
+    src: url('C:/Windows/Fonts/segoeui.ttf') format('truetype'); /* Adjust the path and format accordingly */
+    font-weight: normal;
+    font-style: normal;
+}
+  
+  body {
+    font-family: 'YourFontName', sans-serif; /* Use the font-family in your styles */
+  }
